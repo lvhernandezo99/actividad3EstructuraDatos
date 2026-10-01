@@ -56,7 +56,7 @@ public class Main {
         Libro noEncontrado = listaLibros.buscar("9999");
 
         if (noEncontrado == null) {
-            System.out.println("No se encontró el libro.");
+            System.out.println("No se encontro el libro.");
         }
 
         System.out.println("\n--- Insertar clave repetida ---");
@@ -73,7 +73,7 @@ public class Main {
 
         listaLibros.eliminar("9999");
 
-        System.out.println("\n--- Eliminar único elemento ---");
+        System.out.println("\n--- Eliminar unico elemento ---");
 
         ListaLibros listaTemporal = new ListaLibros();
 
@@ -86,7 +86,7 @@ public class Main {
  
         // 3. ÁRBOL BINARIO DE BÚSQUEDA 
         System.out.println("\n==/////////////////////////////////==");
-        System.out.println("ÁRBOL BINARIO DE BÚSQUEDA");
+        System.out.println("ARBOL BINARIO DE BUSQUEDA");
         System.out.println("==/////////////////////////////////==");
 
         ArbolBinarioBusqueda arbol = new ArbolBinarioBusqueda();
@@ -106,7 +106,7 @@ public class Main {
         System.out.println("Postorden:");
         arbol.postorden();
 
-        System.out.println("Altura del árbol: " + arbol.altura());
+        System.out.println("Altura del arbol: " + arbol.altura());
 
         System.out.println("\nBuscando libro 1904:");
 
@@ -118,12 +118,12 @@ public class Main {
             System.out.println("Libro no encontrado.");
         }
 
-        System.out.println("\nBuscando código inexistente en el árbol:");
+        System.out.println("\nBuscando codigo inexistente en el arbol:");
 
         Libro noEncontradoArbol = arbol.buscar("9999");
 
         if (noEncontradoArbol == null) {
-            System.out.println("No se encontró el libro 9999.");
+            System.out.println("No se encontro el libro 9999.");
         }
         
         // 4. COLA DE SOLICITUDES 
@@ -194,7 +194,7 @@ public class Main {
         System.out.println("Grado del libro 1224: "+ grafo.calcularGrado("1224"));
 
         // Relación duplicada
-        System.out.println("\nIntentando crear relación duplicada:");
+        System.out.println("\nIntentando crear relacion duplicada:");
         grafo.agregarRelacion("2811", "8703");
 
         // Libro inexistente en el grafo
