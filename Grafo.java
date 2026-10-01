@@ -9,7 +9,7 @@ public class Grafo {
     public void agregarLibro(Libro libro) {
 
         if (buscarNodo(libro.getCodigo()) != null) {
-            System.out.println( "Ya existe un libro con el código: " + libro.getCodigo() );
+            System.out.println( "Ya existe un libro con el codigo: " + libro.getCodigo() );
             return;
         }
         NodoGrafo nuevoNodo = new NodoGrafo(libro);
@@ -49,7 +49,7 @@ public class Grafo {
             return;
         }
         if (existeAdyacencia(libro1, codigo2)) {
-            System.out.println("La relación ya existe.");
+            System.out.println("La relacion ya existe.");
             return;
         }
 
@@ -87,7 +87,7 @@ public class Grafo {
     public void mostrarVecinos(String codigo) {
         NodoGrafo nodo = buscarNodo(codigo);
         if (nodo == null) {
-            System.out.println("No existe un libro con el código: " + codigo);
+            System.out.println("No existe un libro con el codigo: " + codigo);
             return;
         }
         NodoAdyacencia actual = nodo.getAdyacencias();
