@@ -21,7 +21,7 @@ public class ColaArreglo implements Cola {
     public void encolar(Solicitud solicitud) {
 
         if (cantidad == elementos.length) {
-            System.out.println("La cola está llena.");
+            System.out.println("La cola esta llena.");
             return;
         }
 
