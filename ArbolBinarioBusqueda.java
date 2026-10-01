@@ -33,7 +33,7 @@ public class ArbolBinarioBusqueda {
                 insertarRecursivo( actual.getDerecha(), libro)
             );
         } else {
-            System.out.println("Ya existe un libro con el código: " + libro.getCodigo());
+            System.out.println("Ya existe un libro con el codigo: " + libro.getCodigo());
         }
 
         return actual;
