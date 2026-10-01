@@ -27,7 +27,7 @@ public class ListaLibros {
             actual.setSiguiente(nuevoNodo);
         }
     
-        System.out.println("Libro insertado con éxito: " + libro.getTitulo());
+        System.out.println("Libro insertado con exito: " + libro.getTitulo());
     }
    
     public Libro buscar(String codigo) {
@@ -47,14 +47,14 @@ public class ListaLibros {
     public boolean eliminar(String codigo) {
 
         if (cabeza == null) {
-            System.out.println("La lista está vacía.");
+            System.out.println("La lista esta vacía.");
             return false;
         } 
       
         if (cabeza.getLibro().getCodigo().equals(codigo)) {
             cabeza = cabeza.getSiguiente();
 
-            System.out.println("Libro con código " + codigo + " eliminado.");
+            System.out.println("Libro con codigo " + codigo + " eliminado.");
             return true;
         }
 
@@ -70,18 +70,18 @@ public class ListaLibros {
 
             actual.setSiguiente(actual.getSiguiente().getSiguiente());
 
-            System.out.println("Libro con código " + codigo + " eliminado.");
+            System.out.println("Libro con codigo " + codigo + " eliminado.");
             return true;
         }
 
-        System.out.println("No se encontró ningún libro con el código: " + codigo);
+        System.out.println("No se encontro ningun libro con el codigo: " + codigo);
         return false;
     }
  
     public void recorrer() {
 
         if (cabeza == null) {
-            System.out.println("La lista de libros está vacía.");
+            System.out.println("La lista de libros esta vacia.");
             return;
         }
 
@@ -94,8 +94,8 @@ public class ListaLibros {
             Libro libro = actual.getLibro();
 
             System.out.println(
-                "Código: " + libro.getCodigo() +
-                " | Título: " + libro.getTitulo() +
+                "Codigo: " + libro.getCodigo() +
+                " | Titulo: " + libro.getTitulo() +
                 " | Autor: " + libro.getAutor() +
                 " | Año: " + libro.getAnoPublicacion()
             );
